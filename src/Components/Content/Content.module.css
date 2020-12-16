@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.Content {
+  padding: 0 70px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  min-height: 1500px;
+}

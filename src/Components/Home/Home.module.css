@@ -1,0 +1,217 @@
+.Home {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  min-height: 1500px;
+  background-image: url(../../Img/bg1.jpg);
+}
+
+.Introdaction {
+  padding-left: 70px;
+  text-align: left;
+  width: 600px;
+  margin-top: 100px;
+}
+
+.IntroText {
+  font-size: 50px;
+}
+.IntroLine {
+  background-color: #ff0000;
+  width: 530px;
+  border: 2px solid #ff0000;
+}
+.IntroSubText {
+  font-weight: bold;
+  font-size: 25px;
+}
+.HomeBlock {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "homen homel";
+}
+.HomeNav {
+  grid-area: homen;
+}
+.ScheduleText a {
+  font-weight: 500;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+.ShopText a {
+  font-weight: 500;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+.StudText a {
+  font-weight: 500;
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+}
+.HomeLNU {
+  align-items: center;
+  display: grid;
+  grid-area: homel;
+  width: 100%;
+  height: 300px;
+  background-color: #0c265d;
+  border-radius: 30px 0 0 30px;
+  grid-template-columns: 0.7fr 1fr;
+  grid-template-areas: "lnui lnut";
+}
+.LnuImg {
+  grid-area: lnui;
+}
+.LnuText {
+  color: white;
+  font-size: 45px;
+  grid-area: lnut;
+}
+.Schedule {
+  background-color: #0c265d;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  align-items: center;
+  border-radius: 0 50px 50px 0;
+  width: 90px;
+  height: 70px;
+  display: grid;
+  grid-template-areas: "schedulet schedulei ";
+  grid-template-columns: 0.6fr 1fr;
+}
+.ScheduleText {
+  padding-left: 10px;
+  display: none;
+  text-align: center;
+  transition: 0.4s;
+  grid-area: schedulet;
+  color: black;
+  font-size: 30px;
+}
+.ScheduleImg {
+  padding-left: 10px;
+  grid-area: schedulei;
+  width: 60px;
+  height: 60px;
+}
+.Shop {
+  background-color: #0c265d;
+  margin-bottom: 15px;
+  align-items: center;
+  border-radius: 0 50px 50px 0;
+  width: 90px;
+  height: 70px;
+  display: grid;
+  grid-template-areas: " shopt shopi";
+  grid-template-columns: 0.6fr 1fr;
+}
+.ShopText {
+  display: none;
+  text-align: center;
+  padding-left: 20px;
+  transition: 0.4s;
+  grid-area: shopt;
+  color: black;
+  font-size: 30px;
+}
+.ShopImg {
+  grid-area: shopi;
+  width: 60px;
+  height: 60px;
+}
+.Stud {
+  margin-bottom: 15px;
+  background-color: #0c265d;
+  text-align: center;
+  align-items: center;
+  border-radius: 0 50px 50px 0;
+  width: 90px;
+  height: 70px;
+  display: grid;
+  grid-template-areas: "studt studi ";
+  grid-template-columns: 0.3fr 1fr;
+}
+.StudText {
+  font-size: 10px;
+  display: none;
+  transition: 0.4s;
+  grid-area: studt;
+  color: black;
+}
+.StudImg {
+  grid-area: studi;
+  color: white;
+  width: 70px;
+  height: 70px;
+}
+.Button {
+  margin-top: 300px;
+  display: grid;
+  grid-template-columns: 0.6fr 1fr 0.6fr;
+  grid-template-areas: ". but .";
+}
+.ButtonBlock {
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-area: but;
+}
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 1000px;
+  height: 400px;
+  background: #0c265d;
+  display: block;
+  border-radius: 300px;
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 390px;
+  height: 390px;
+  background-image: url(../../Img/prom.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 390px;
+  transition: 0.5s;
+}
+
+input:checked + label {
+  background: #ff0000;
+}
+input:checked .ButText {
+  color: white;
+}
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 130px;
+}
+.ButText {
+  transition: 0.4;
+  color: white;
+  left: 100px;
+  font-size: 30px;
+  position: absolute;
+  display: none;
+}

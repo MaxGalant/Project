@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+.Header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+  grid-template-areas: ". .  " ". Hm " ". .  ";
+  width: 100%;
+  height: 100px;
+}
+.Main {
+  font-weight: 500;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  display: grid;
+  grid-template-columns: 0.3fr 0.6fr 0.6fr 0.6fr 0.4fr;
+  grid-template-areas: ". home contact about  menu ";
+  border-radius: 70px 0 0 70px;
+  grid-area: Hm;
+  width: 800px;
+  height: 50px;
+  opacity: 0.8;
+  background-color: #ff0000;
+}
+.Home {
+  grid-area: home;
+}
+.Contact {
+  grid-area: contact;
+}
+.About {
+  grid-area: about;
+}
+.Menu {
+  position: relative;
+  grid-area: menu;
+}
+.Main a {
+  color: white;
+  text-decoration: none;
+}
+.Main a.active {
+  color: white;
+}
+.Main a:hover {
+  color: white;
+  transition: 0.5s;
+}
+.PopupBlock {
+  text-decoration: underline;
+  text-align-last: left;
+  border-radius: 20px 0 0 20px;
+  cursor: pointer;
+  top: 52px;
+  display: none;
+  right: 8px;
+  position: absolute;
+  width: 170px;
+  height: 220px;
+  background-color: #ff0000;
+}
+.PopupEl:first-child {
+  margin-top: 10px;
+}
+.PopupEl {
+  margin-left: 30px;
+}
+.logout {
+  font-size: 25px;
+  margin-top: 15px;
+  margin-left: 65px;
+}
+
+.PopupEl:hover {
+  transition: 0.5s;
+}
+.PopupEl a:hover {
+  color: #0c265d;
+}

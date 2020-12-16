@@ -1,0 +1,68 @@
+.Shedule {
+  background: url(../../Img/bg4.jpg) no-repeat center center fixed;
+  min-height: 900px;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+.SheduleBlock {
+  padding: 50px;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "daysL daysR";
+  margin: 200px;
+  background: rgba(0, 37, 116, 0.35);
+}
+.DaysL {
+  justify-self: center;
+  grid-area: daysL;
+}
+.DaysR {
+  justify-self: center;
+  grid-area: daysR;
+}
+.Monday {
+  margin-bottom: 30px;
+  background-color: #c4c4c4;
+  border-radius: 50px 140px 50px 140px;
+  width: 400px;
+  height: 400px;
+}
+.Wednesday {
+  margin-bottom: 30px;
+  background-color: #c4c4c4;
+  border-radius: 50px 140px 50px 140px;
+  width: 400px;
+  height: 400px;
+}
+.Friday {
+  margin-bottom: 30px;
+  background-color: #c4c4c4;
+  border-radius: 50px 140px 50px 140px;
+  width: 400px;
+  height: 400px;
+}
+.Tuesday {
+  margin-bottom: 30px;
+  background-color: #c4c4c4;
+  border-radius: 140px 50px 140px 50px;
+  width: 400px;
+  height: 400px;
+}
+.Thursday {
+  margin-bottom: 30px;
+  background-color: #c4c4c4;
+  border-radius: 140px 50px 140px 50px;
+
+  width: 400px;
+  height: 400px;
+}
+.Saturday {
+  margin-bottom: 30px;
+  background-color: #c4c4c4;
+  border-radius: 140px 50px 140px 50px;
+
+  width: 400px;
+  height: 400px;
+}

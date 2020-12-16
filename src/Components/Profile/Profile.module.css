@@ -1,0 +1,40 @@
+.ProfileBlock {
+  grid-gap: 30px;
+  border-radius: 50px;
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  padding: 70px;
+  margin: 120px 280px;
+  grid-template-areas: "PImg PInfo";
+  opacity: 0.92;
+  background-color: rgba(196, 196, 196);
+}
+.ProfileImg {
+  width: 250px;
+  height: 250px;
+  border-radius: 40px;
+
+  grid-area: PImg;
+}
+.ProfileInfo {
+  text-align-last: left;
+  grid-area: PInfo;
+}
+.ProfileName {
+  font-size: 40px;
+  font-weight: 500;
+}
+.ProfileGroup {
+  font-size: 30px;
+  font-weight: 400;
+}
+.ProfileRole {
+  font-size: 30px;
+  font-weight: 400;
+}
+.ProfileRoleA {
+  color: black;
+  font-size: 30px;
+  font-weight: 400;
+  text-decoration: none;
+}

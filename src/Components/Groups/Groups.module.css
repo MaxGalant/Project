@@ -1,0 +1,64 @@
+.Groups {
+  font-weight: 300;
+  background-image: url(../../Img/bg3.jpg);
+  min-height: 1500px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.GroupsBlock {
+  border-radius: 100px;
+  height: 200px;
+  grid-template-columns: 0.4fr 0.6fr;
+  grid-template-areas: "groupT groupI";
+  margin: 100px 250px;
+  display: grid;
+  width: 1000px;
+  background: rgb(196, 196, 196);
+}
+.GroupTitle {
+  display: grid;
+  align-items: center;
+  grid-area: groupT;
+  font-size: 50px;
+  color: white;
+  border-radius: 100px 30px 130px 100px;
+  height: 200px;
+  width: 100%;
+  background: rgba(3, 24, 69, 0.8);
+}
+.GroupInfo {
+  font-weight: 400;
+  margin-top: 25px;
+  font-size: 25px;
+  margin-left: 50px;
+  text-align: left;
+  grid-area: groupI;
+}
+.GroupContact {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  grid-template-areas: "groupTel groupEmail";
+}
+.GroupTel {
+  grid-area: groupTel;
+}
+.GroupEmail {
+  grid-area: groupEmail;
+}
+.GroupButCuriculum {
+  margin-left: 55%;
+  margin-top: 10px;
+  text-align: center;
+  width: 160px;
+  padding-bottom: 5px;
+  border-radius: 80px;
+  background: rgba(3, 24, 69, 0.8);
+}
+.GroupButCuriculum a {
+  color: white;
+
+  text-decoration: none;
+}

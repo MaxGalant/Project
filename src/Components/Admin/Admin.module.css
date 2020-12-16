@@ -1,0 +1,155 @@
+.ProfileBlock {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-areas: "Ap";
+  opacity: 0.92;
+  padding: 70px;
+  margin: 120px 280px;
+  border-radius: 50px;
+  background-color: rgba(196, 196, 196);
+}
+.AdminInfo {
+  grid-area: Ap;
+  grid-gap: 30px;
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  grid-template-areas: "PImg PInfo";
+}
+.ProfileImg {
+  width: 250px;
+  height: 250px;
+  border-radius: 40px;
+
+  grid-area: PImg;
+}
+.ProfileInfo {
+  text-align-last: left;
+  grid-area: PInfo;
+}
+.ProfileName {
+  font-size: 40px;
+  font-weight: 500;
+}
+.ProfileGroup {
+  font-size: 30px;
+  font-weight: 400;
+}
+.ProfileRole {
+  font-size: 30px;
+  font-weight: 400;
+}
+.ProfileRoleA {
+  color: black;
+  font-size: 30px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.DbBlock {
+  display: grid;
+  height: 1000px;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  grid-template-areas: "DbL DbU DbG";
+}
+.DbLectors {
+  border-right: gray 1px solid;
+  padding: 15px;
+  grid-area: DbL;
+}
+.DbUsers {
+  padding: 15px;
+  border-right: gray 1px solid;
+  grid-area: DbU;
+}
+.DbGroups {
+  padding: 15px;
+
+  grid-area: DbG;
+}
+.DbTitle {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  grid-area: lectort;
+}
+.DbCafedra {
+  cursor: pointer;
+
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  grid-area: lectorc;
+}
+.DbImg {
+  border-radius: 100px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+.Db {
+  margin-top: 50px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 0.2fr 0.5fr;
+  grid-template-rows: 0.2fr 0.4fr 0.8fr 0.5fr;
+  grid-template-areas: ". . . ." ". lectort . del" ". lectorc. del" ". . . .";
+  width: 100%;
+  height: 100px;
+  grid-area: lector;
+  background: rgba(196, 196, 196, 0.7);
+  border-radius: 200px;
+  position: relative;
+}
+.DelButton {
+  grid-area: del;
+  width: 100px;
+  background-color: cornsilk;
+}
+.GroupsBlock {
+  margin: 50px 0;
+  border-radius: 50px;
+  height: 100px;
+  grid-template-columns: 0.4fr 0.6fr;
+  grid-template-areas: "groupT groupI";
+  display: grid;
+  width: 500px;
+  background: rgb(196, 196, 196);
+}
+.GroupTitle {
+  display: grid;
+  align-items: center;
+  grid-area: groupT;
+  font-size: 25px;
+  color: white;
+  border-radius: 100px 30px 130px 100px;
+  height: 100px;
+  width: 100%;
+  background: rgba(3, 24, 69, 0.8);
+}
+.GroupInfo {
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 15px;
+  margin-left: 20px;
+  text-align: left;
+  grid-area: groupI;
+}
+.GroupContact {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  grid-template-areas: "groupTel groupEmail";
+}
+.GroupTel {
+  grid-area: groupTel;
+}
+.GroupEmail {
+  grid-area: groupEmail;
+}
+.DbLectorsTitle {
+  font-weight: 500;
+  font-size: 50px;
+}

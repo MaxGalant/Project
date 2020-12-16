@@ -1,0 +1,67 @@
+.Lectors {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  min-height: 1500px;
+  background-image: url(../../Img/bg2.jpg);
+}
+.LectorsContainer {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ". lectortitle ." ". block . ";
+}
+.LectorsTitle {
+  grid-area: lectortitle;
+  padding-top: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+.LectorBlock {
+  grid-area: block;
+  width: 800px;
+}
+
+.Lector {
+  margin-top: 50px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 0.7fr;
+  grid-template-rows: 0.2fr 0.4fr 0.8fr 0.5fr;
+  grid-template-areas: ". . ." ". lectort ." ". lectorc ." ". . .";
+  widows: 100%;
+  height: 200px;
+  grid-area: lector;
+  background: rgba(196, 196, 196, 0.7);
+  border-radius: 200px;
+  position: relative;
+}
+.Lector a {
+  color: black;
+  text-decoration: none;
+}
+.LectorImg {
+  border-radius: 200px;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+.LectorTitle {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  grid-area: lectort;
+}
+.LectorCafedra {
+  cursor: pointer;
+
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+
+  grid-area: lectorc;
+}

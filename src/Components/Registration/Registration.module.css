@@ -1,0 +1,71 @@
+.Registration {
+  font-style: italic;
+  background-size: cover;
+  background-image: url(../../Img/bgd5.jpg);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr 1fr;
+  grid-template-rows: 0.1fr 1fr 0.3fr;
+  grid-template-areas: ". . ." ". RB ." ". . .";
+}
+.RegistrationBlock {
+  border-radius: 10px;
+  grid-area: RB;
+  background-color: #c8c8c8;
+}
+.RegTitle {
+  margin-top: 50px;
+  font-weight: 350;
+  font-size: 50px;
+}
+.RegistrationBlock input {
+  margin-top: 20px;
+
+  padding-left: 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  height: 50px;
+  width: 80%;
+}
+
+.RegBut {
+  border-radius: 15px;
+  font-size: 20px;
+  color: white;
+  width: 40%;
+  height: 50px;
+  background: #0c265d;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.Line {
+  margin: 20px;
+  border: 1px solid gray;
+  background-color: gray;
+}
+.Text {
+  font-weight: 200;
+  font-size: 25px;
+  margin-bottom: 100px;
+
+  color: #474747;
+}
+.Text a {
+  font-stretch: normal;
+  font-weight: 600;
+  text-decoration: none;
+  color: #00639a;
+}
+.Message {
+  height: 25px;
+  margin: 10px 0 0 35px;
+  color: red;
+  text-align: left;
+}
+.Main {
+  margin-left: 35px;
+  text-align: left;
+  font-size: 20px;
+  color: red;
+}
